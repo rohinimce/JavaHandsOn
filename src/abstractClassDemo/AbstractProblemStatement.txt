@@ -1,0 +1,91 @@
+Problem Statement:
+Objective: To learn the concept of abstract classes and methods.
+
+ 
+
+Problem Description: Peter wants to start a payment service portal for making payments for credit card bill and online shopping. He will need a base class (RRPaymentServices) to store balance and customer ID information. He will use two classes- CreditCardPayment and ShoppingPayment for paying Credit card bills and shopping bills respectively. The bill payment and id generation is different for both payment modes.
+
+ 
+
+Class Description:
+
+Create a Java Project with the name AbstractClassesAndMethods
+
+RRPaymentServices:
+
+This is the base class for CreditCardPayment and ShoppingPayment classes.
+
+It will store the amount to be paid by the user in the instance variable balance of the class.
+ 
+
+ex37.1
+Method Description:
+
+payBill(double amount): This is an abstract method which has to be implemented by the child classes of RRPaymentServices.
+ 
+
+ShoppingPayment:
+
+This class is a child class of RRPaymentServices. It has a static variable counter, to set the paymentID. The class diagram is shown below:
+
+ 
+
+ex37.2
+Method Description:
+
+payBill(double amount): For shopping bill payment, the payment id should start with 'S' followed by a four digit integer number. If the user enters an amount not equal to the balance which is due, an appropriate error message should be displayed and the id should get generated only for valid payments.
+CreditCardPayment:
+
+This class is another child class of RRPaymentServices. It has a static variable counter, to generate the paymentID. The class diagram is shown below:
+
+ 
+
+ex37.3
+Method Description:
+
+payBill(double amount): For credit card bill payment, if a user enters an amount more than amount to be paid, the excess amount should be stored as cashBack. The payBill method is used to pay the bill and generate the transaction id. The id should start with 'C' followed by a four-digit integer number. In case the user enters an amount less than the amount to be paid, then the remaining amount should be stored in the instance variable balanceDue of class CreditCardPayment.
+Use a Tester class to test your code and display the payment information.
+The balanceDue after the payment should be communicated to the user.
+Some outputs with different inputs is given below for your reference.
+
+Input1 (For credit card)
+
+ex37.4
+Output
+
+ex37.5
+Input2 (For credit card)
+
+ex37.6
+Output
+
+
+Input3 (For Shopping)
+
+ex37.7
+Output:
+
+ex37.8
+Input 4(For Shopping)
+
+ex37.9
+Output
+
+ex37.10
+Input5 (For Shopping)
+
+ex37.11
+Output
+
+ex37.12
+Input6 (For Shopping)
+
+ex37.13
+Output
+
+ex37.14
+Summary of this exercise:
+
+You have learnt:
+
+How to use an abstract method.
