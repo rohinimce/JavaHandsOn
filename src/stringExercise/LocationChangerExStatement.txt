@@ -1,0 +1,70 @@
+ProblemStatement:
+Objective: To understand the methods of String class
+
+ 
+
+Problem Description: Infosys Mysore is welcoming some employees from Delhi, Trivandrum and Bhubaneshwar. It identifies their city name from the address they enter and gives them a warm welcome. If the employee works in an STP then his/her location has to be changed to SEZ.
+
+ 
+
+Package Description: Create a package com.infy.string and place all the classes in it.
+
+Implement the class LocationChanger using the class diagram given below:
+
+ 
+
+LocationChanger:
+
+ 
+
+ex42.1
+Methods Description:
+
+welcomeEmployee(): When the user enters his/her name, the method should take only the first name from their name. E.g. if the name is entered as Annabelle Michael then the message should be displayed as
+ 
+
+exc42.2
+checkCity(): It checks the employee's city from the String location and displays an appropriate message:
+If city is Delhi, then output will be
+
+ex42.3
+If city is Trivandrum, then output will be
+
+ex42.4
+If city is Bhubaneshwar, then output will be
+
+ex42.5
+editAddress(): If the employee works in STP then the output should be displayed as:
+
+ex42.6
+If the employee works in SEZ, then the output should be displayed as:
+
+ 
+
+ex42.7
+Create a class Tester and implement the following:
+
+ex42.8
+Input1:
+
+ 
+
+ex42.9
+Output:
+
+ 
+
+ex42.10
+Input2:
+
+ 
+
+ex42.11
+Output:
+
+ 
+
+ex42.12
+Summary of this exercise:
+
+You have learnt how to use various methods of the String class for certain requirements.
