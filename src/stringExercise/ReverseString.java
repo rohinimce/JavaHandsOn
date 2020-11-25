@@ -12,6 +12,7 @@ public class ReverseString {
 		 * System.out.println("---------------");
 		 */
 //rev.reverseStringForLoop("Hello");
+	rev.stringReverse();
 
 	}
 	public void reverseIntergerNumberAsString(int number) {
@@ -74,6 +75,41 @@ public class ReverseString {
 		}
 		
 	
+		public void stringReverse() {
+String str="java program";
+//int size=str.length();
+//for(int i=size;i>0;i--) {
+//	System.out.print(str.charAt(i-1));
+//}
+//	String[] s= str.split(" ");
+//	String output="";
+//	for(int i=s.length-1;i>=0;i--) {
+//		output+=s[i]+" ";
+//		
+//	}
+//System.out.println("Reverse sentence"+output.substring(0, output.length()-1));
+
+
+char[] sChar=str.toCharArray();
+int count;
+
+for(int i=0;i<sChar.length;i++) {
+	count=1;
+	for(int j=i+1;j<sChar.length;j++) {
+		if(sChar[i]==sChar[j]&&sChar[i]!=' ') {
+			count++;
+			sChar[j]='0';
+			
+		}
+		
+		}
+	if(sChar[i]!='0') {
+		System.out.println(sChar[i]+" -"+count);
+		
+	}
+}
+		}
+		
 		
 		
 }
