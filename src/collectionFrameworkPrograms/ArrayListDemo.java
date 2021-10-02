@@ -45,6 +45,7 @@ public class ArrayListDemo {
 	
 	public void getElementValue() {
 		String indexValue=(String) l1.get(0);
+		l1.get(1).toString();
 		System.out.println("Index value of 0 "+indexValue);
 	}
 	

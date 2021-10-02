@@ -8,7 +8,7 @@ public class StringConversion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-
+		stringToFloat();
 	}
 
 
@@ -34,12 +34,13 @@ public class StringConversion {
 
 	public static void convertStringToByte(){
 		String str="1";
-		String s="hello";
 		Byte b= Byte.valueOf(str);
 		Byte b1=Byte.parseByte(str);
-		byte[] b2=s.getBytes();
 		System.out.println(b);
 		System.out.println(b1);
+
+		String s="hello";
+		byte[] b2=s.getBytes();
 		System.out.println(Arrays.toString(b2));
 	}
 

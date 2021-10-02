@@ -2,6 +2,13 @@ package stringPrograms;
 
 public class PermutationsOfString {
     // Function to print all the permutations of given string
+
+    public static void main(String[] args)
+    {
+        String d = "Dev";
+        permutation(d, "");
+
+    }
     static void permutation(String s, String result)
     {
         // If string is empty
@@ -18,11 +25,6 @@ public class PermutationsOfString {
             permutation(remainStr, result + ch);
         }
     }
-    public static void main(String[] args)
-    {
-        String d = "Dev";
-        permutation(d, "");
 
-    }
 
 }

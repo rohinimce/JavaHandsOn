@@ -13,16 +13,16 @@ public class MapHandsOn {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MapHandsOn demo = new MapHandsOn();
-		demo.hashMapMethod();
+		//demo.hashMapMethod();
 
 		System.out.println("--------------------");
-		demo.linkedhashmap();
+	//	demo.linkedhashmap();
 
 		System.out.println("--------------------");
 		demo.treemap();
-		
+
 		System.out.println("--------------------");
-		demo.iterateMap();
+		//demo.iterateMap();
 	}
 
 	public void hashMapMethod() {
@@ -36,6 +36,7 @@ public class MapHandsOn {
 		System.out.println("Get value of 10:" + map.get(10));
 
 		Set<Integer> set = map.keySet();
+
 
 		for (Integer i : set) {
 			System.out.println(map.get(i));
